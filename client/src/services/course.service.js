@@ -1,7 +1,5 @@
 import axios from "axios";
-const API_URL = process.env.REACT_APP_BACKEND_URL
-  ? process.env.REACT_APP_BACKEND_URL + "/api/courses"
-  : "http://localhost:8080/api/courses";
+const API_URL = "/api/courses";
 
 class CourseService {
   //取得token
