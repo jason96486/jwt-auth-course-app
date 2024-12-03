@@ -33,11 +33,12 @@ const LoginComponent = ({ currentUser, setCurrentUser }) => {
       <div>
         {message && <div className="alert alert-danger">{message}</div>}
         <div className="form-group">
-          <label htmlFor="username">電子信箱：</label>
+          <label htmlFor="email">電子信箱：</label>
           <input
             onChange={handleChangeEmail}
-            type="text"
+            type="email"
             className="form-control"
+            id="email"
             name="email"
           />
         </div>
@@ -48,6 +49,7 @@ const LoginComponent = ({ currentUser, setCurrentUser }) => {
             onChange={handleChangePassword}
             type="password"
             className="form-control"
+            id="password"
             name="password"
           />
         </div>

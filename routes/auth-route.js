@@ -31,7 +31,7 @@ router.post("/register", async (req, res) => {
       createdUser,
     });
   } catch (e) {
-    return res.status(500).send("哎呀!伺服器出錯啦!唉唉唉唉唉呀!");
+    return res.status(500).send("伺服器出錯");
   }
 });
 //route，登入

@@ -55,30 +55,30 @@ const PostCourseComponent = ({ currentUser, setCurrentUser }) => {
       )}
       {currentUser && currentUser.user.role === "instructor" && (
         <div className="form-group">
-          <label for="exampleforTitle">課程標題：</label>
+          <label for="title">課程標題：</label>
           <input
             name="title"
             type="text"
             className="form-control"
-            id="exampleforTitle"
+            id="title"
             onChange={handleChangeTitle}
           />
           <br />
-          <label for="exampleforContent">內容：</label>
+          <label for="content">內容：</label>
           <textarea
             className="form-control"
-            id="exampleforContent"
+            id="content"
             aria-describedby="emailHelp"
             name="content"
             onChange={handleChangeDesciption}
           />
           <br />
-          <label for="exampleforPrice">價格：</label>
+          <label for="price">價格：</label>
           <input
             name="price"
             type="number"
             className="form-control"
-            id="exampleforPrice"
+            id="price"
             onChange={handleChangePrice}
           />
           <br />

@@ -46,6 +46,7 @@ const RegisterComponent = () => {
             onChange={handleChangeUsername}
             type="text"
             className="form-control"
+            id="username"
             name="username"
           />
         </div>
@@ -56,6 +57,7 @@ const RegisterComponent = () => {
             onChange={handleChangeEmail}
             type="text"
             className="form-control"
+            id="email"
             name="email"
           />
         </div>
@@ -66,18 +68,20 @@ const RegisterComponent = () => {
             onChange={handleChangePassword}
             type="password"
             className="form-control"
+            id="password"
             name="password"
             placeholder="長度至少超過6個英文或數字"
           />
         </div>
         <br />
         <div className="form-group">
-          <label htmlFor="password">身份：</label>
+          <label htmlFor="role">身份：</label>
           <input
             onChange={handleChnageRole}
             type="text"
             className="form-control"
             placeholder="只能填入student或是instructor這兩個選項其一"
+            id="role"
             name="role"
           />
         </div>
